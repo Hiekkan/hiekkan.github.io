@@ -62,7 +62,7 @@ export default function AppTree({
       aria-label="file system navigator"
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
-      sx={{ minWidth: 220 }}
+      sx={{ minWidth: 220, fontSize: "0.9rem", }}
       defaultExpanded={["-1"]}
     >
       <TreeItem
@@ -75,21 +75,23 @@ export default function AppTree({
         }}
         sx={{
           color: "white",
-          fontFamily: "Segoe WPC,Segoe UI,sans-serif",
           "&:hover": {
             backgroundColor: "#1a1b26",
           },
           "&& .MuiTreeItem-content": {
             padding: 0,
-            fontFamily: "Segoe WPC,Segoe UI,sans-serif !important"
+            fontSize: "0.9rem",
           },
           "&& .Mui-selected": {
             backgroundColor: renderTreeItemBgColor(-1),
-            fontFamily: "Segoe WPC,Segoe UI,sans-serif"
+            fontSize: "0.9rem",
+          },
+          "&& .Mui-focused": {
+            backgroundColor: renderTreeItemBgColor(-1),
+            fontSize: "0.9rem",
           },
           ".MuiTreeItem-label": {
             fontSize: "0.9rem",
-            fontFamily: "Segoe WPC,Segoe UI,sans-serif !important"
           },
         }}
       >
@@ -100,22 +102,16 @@ export default function AppTree({
             label={name}
             sx={{
               color: renderTreeItemColor(index),
-              fontFamily: "Segoe WPC,Segoe UI,sans-serif",
               backgroundColor: renderTreeItemBgColor(index),
-              ".MuiTreeItem-label": {
-                fontFamily: "Segoe WPC,Segoe UI,sans-serif"
-              },
               "&:hover": {
                 background: "#13131a",
               },
               "&& .Mui-selected": {
                 backgroundColor: renderTreeItemBgColor(index),
                 color: renderTreeItemColor(index),
-                fontFamily: "Segoe WPC,Segoe UI,sans-serif"
               },
               "&& .MuiTreeItem-content": {
                 padding: 0,
-                fontFamily: "Segoe WPC,Segoe UI,sans-serif"
               },
             }}
             icon={<VscMarkdown color="#6997d5" />}
