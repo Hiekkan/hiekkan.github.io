@@ -75,6 +75,7 @@ export default function AppTree({
         }}
         sx={{
           color: "white",
+          fontFamily: "Segoe WPC,Segoe UI,sans-serif",
           "&:hover": {
             backgroundColor: "#1a1b26",
           },
@@ -84,6 +85,7 @@ export default function AppTree({
           },
           "&& .Mui-selected": {
             backgroundColor: renderTreeItemBgColor(-1),
+            fontFamily: "Segoe WPC,Segoe UI,sans-serif"
           },
           ".MuiTreeItem-label": {
             fontSize: "0.9rem",
@@ -98,6 +100,7 @@ export default function AppTree({
             label={name}
             sx={{
               color: renderTreeItemColor(index),
+              fontFamily: "Segoe WPC,Segoe UI,sans-serif",
               backgroundColor: renderTreeItemBgColor(index),
               ".MuiTreeItem-label": {
                 fontFamily: "Segoe WPC,Segoe UI,sans-serif"
@@ -107,7 +110,8 @@ export default function AppTree({
               },
               "&& .Mui-selected": {
                 backgroundColor: renderTreeItemBgColor(index),
-                color: renderTreeItemColor(index)
+                color: renderTreeItemColor(index),
+                fontFamily: "Segoe WPC,Segoe UI,sans-serif"
               },
               "&& .MuiTreeItem-content": {
                 padding: 0,
