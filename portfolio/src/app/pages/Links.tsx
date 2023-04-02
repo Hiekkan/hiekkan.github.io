@@ -13,7 +13,7 @@ import {
     {
       index: 1,
       title: "Find me on LinkedIn",
-      href: "https://www.linkedin.com/in/nora-jentzsch",
+      href: "https://www.linkedin.com/in/nora-jentzsch/",
       icon: <FaLinkedin />,
     }
   ];
