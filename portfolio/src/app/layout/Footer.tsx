@@ -9,8 +9,10 @@ import {
   VscSync,
 } from "react-icons/vsc";
 import { IoIosGitBranch } from "react-icons/io";
+import { useTheme } from "@mui/system";
 
 export default function Footer() {
+  const theme = useTheme();
   return (
     <Box
       component={Paper}
@@ -38,7 +40,7 @@ export default function Footer() {
         </Grid>
         <Grid
           item
-          sx={{ backgroundColor: "#1a1b26", width: "200px" }}
+          sx={{ backgroundColor: theme.palette.mode === "dark" ? "#16161e" : "#cbccd1", width: "200px" }}
           display="flex"
         >
           <Stack direction="row" spacing={0.5}>
@@ -46,7 +48,7 @@ export default function Footer() {
               component={Link}
               href="https://github.com/Hiekkan/hiekkan.github.io"
               underline="none"
-              color="white"
+              color={theme.palette.mode === "dark" ? "white" : "#333333"}
               target="_blank"
               display="flex"
               sx={{
@@ -54,12 +56,12 @@ export default function Footer() {
                 justifyContent: "center",
                 alignItems: "center",
                 "&:hover": {
-                  background: "#44475c",
+                  background: theme.palette.mode === "dark" ? "#44475c" : "#d5d6db",
                 },
               }}
             >
               <IoIosGitBranch fontSize="0.9rem" />
-              <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem" }}>
+              <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem", color: theme.palette.mode === "dark" ? "white" : "#333333" }}>
                 main
               </Typography>
             </Box>
@@ -67,7 +69,7 @@ export default function Footer() {
               component={Link}
               href="https://github.com/Hiekkan/hiekkan.github.io"
               underline="none"
-              color="white"
+              color={theme.palette.mode === "dark" ? "white" : "#333333"}
               target="_blank"
               display="flex"
               sx={{
@@ -75,11 +77,11 @@ export default function Footer() {
                 justifyContent: "center",
                 alignItems: "center",
                 "&:hover": {
-                  background: "#44475c",
+                  background: theme.palette.mode === "dark" ? "#44475c" : "#d5d6db",
                 },
               }}
             >
-              <VscSync fontSize="0.9rem" />
+              <VscSync fontSize="0.9rem" color={theme.palette.mode === "dark" ? "white" : "#333333"} />
             </Box>
             <Stack
               direction="row"
@@ -88,7 +90,7 @@ export default function Footer() {
                 px: 0.5,
                 cursor: "pointer",
                 "&:hover": {
-                  background: "#44475c",
+                  background: theme.palette.mode === "dark" ? "#44475c" : "#d5d6db",
                 },
               }}
             >
@@ -100,7 +102,7 @@ export default function Footer() {
                   py: 0.3,
                 }}
               >
-                <VscError fontSize="0.9rem" />
+                <VscError fontSize="0.9rem" color={theme.palette.mode === "dark" ? "white" : "#333333"} />
               </Box>
               <Box
                 display="flex"
@@ -110,7 +112,7 @@ export default function Footer() {
                   pt: 0.3,
                 }}
               >
-                <Typography sx={{ fontSize: "0.6rem" }}>0</Typography>
+                <Typography sx={{ fontSize: "0.6rem", color: theme.palette.mode === "dark" ? "white" : "#333333" }}>0</Typography>
               </Box>
 
               <Box
@@ -121,7 +123,7 @@ export default function Footer() {
                   py: 0.3,
                 }}
               >
-                <VscWarning fontSize="0.9rem" />
+                <VscWarning fontSize="0.9rem" color={theme.palette.mode === "dark" ? "white" : "#333333"} />
               </Box>
               <Box
                 display="flex"
@@ -131,14 +133,14 @@ export default function Footer() {
                   pt: 0.3,
                 }}
               >
-                <Typography sx={{ fontSize: "0.6rem" }}>0</Typography>
+                <Typography sx={{ fontSize: "0.6rem", color: theme.palette.mode === "dark" ? "white" : "#333333" }}>0</Typography>
               </Box>
             </Stack>
           </Stack>
         </Grid>
         <Grid
           item
-          sx={{ backgroundColor: "#1a1b26", minWidth: `calc(100% - 235px)` }}
+          sx={{ backgroundColor: theme.palette.mode === "dark" ? "#16161e" : "#cbccd1", minWidth: `calc(100% - 235px)` }}
           display="flex"
           justifyContent="flex-end"
         >
@@ -157,12 +159,12 @@ export default function Footer() {
                   alignItems: "center",
                   cursor: "pointer",
                   "&:hover": {
-                    background: "#44475c",
+                    background: theme.palette.mode === "dark" ? "#44475c" : "#d5d6db",
                   },
                 }}
               >
-                <VscCheck fontSize="0.9rem" />
-                <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem" }}>
+                <VscCheck fontSize="0.9rem" color={theme.palette.mode === "dark" ? "white" : "#333333"} />
+                <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem", color: theme.palette.mode === "dark" ? "white" : "#333333" }}>
                   Prettier
                 </Typography>
               </Box>
@@ -176,11 +178,11 @@ export default function Footer() {
                   px: 0.5,
                   cursor: "pointer",
                   "&:hover": {
-                    background: "#44475c",
+                    background: theme.palette.mode === "dark" ? "#44475c" : "#d5d6db",
                   },
                 }}
               >
-                <VscFeedback fontSize="0.9rem" />
+                <VscFeedback fontSize="0.9rem" color={theme.palette.mode === "dark" ? "white" : "#333333"} />
               </Box>
               <Box
                 display="flex"
@@ -192,11 +194,11 @@ export default function Footer() {
                   px: 0.5,
                   cursor: "pointer",
                   "&:hover": {
-                    background: "#44475c",
+                    background: theme.palette.mode === "dark" ? "#44475c" : "#d5d6db",
                   },
                 }}
               >
-                <VscBell fontSize="0.9rem" />
+                <VscBell fontSize="0.9rem" color={theme.palette.mode === "dark" ? "white" : "#333333"} />
               </Box>
             </Stack>
           </Box>

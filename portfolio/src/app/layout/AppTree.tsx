@@ -6,6 +6,7 @@ import TreeItem from "@mui/lab/TreeItem";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { VscMarkdown } from "react-icons/vsc";
+import { useTheme } from "@mui/system";
 
 interface Page {
   index: number;
@@ -38,6 +39,7 @@ export default function AppTree({
 }: Props) {
   const navigate = useNavigate();
   let { pathname } = useLocation();
+  const theme = useTheme();
 
   const page: Page = pages.find((x) => x.route === pathname)!;
 
@@ -48,13 +50,19 @@ export default function AppTree({
   }, [page, setSelectedIndex]);
 
   function renderTreeItemBgColor(index: number) {
-      return selectedIndex === index ? "#202330" : "#1a1b26";
+    if (theme.palette.mode === "dark") {
+      return selectedIndex === index ? "#202330" : "#16161e";
+    } else {
+      return selectedIndex === index ? "#d5d6db" : "#cbccd1"
+    }
   }
 
   function renderTreeItemColor(index: number) {
-      return selectedIndex === index && currentComponent === "tree"
-        ? "#8388a8"
-        : "#44475c";
+    if (theme.palette.mode === "dark") {
+      return selectedIndex === index && currentComponent === "tree" ? "#8388a8" : "#44475c";
+    } else {
+      return selectedIndex === index ? "#4c505e" : "#828594";
+    }
   }
 
   return (
@@ -68,15 +76,15 @@ export default function AppTree({
       <TreeItem
         nodeId="-1"
         label="HOME"
-        color="#1a1b26"
+        color={theme.palette.mode === "dark" ? "#16161e" : "#cbccd1"}
         onClick={() => {
           navigate("/");
           setSelectedIndex(-1);
         }}
         sx={{
-          color: "white",
+          color: theme.palette.mode === "dark" ? "white" : "#4c505e",
           "&:hover": {
-            backgroundColor: "#1a1b26",
+            backgroundColor: theme.palette.mode === "dark" ? "#16161e" : "#cbccd1",
           },
           "&& .MuiTreeItem-content": {
             padding: 0,
@@ -104,7 +112,7 @@ export default function AppTree({
               color: renderTreeItemColor(index),
               backgroundColor: renderTreeItemBgColor(index),
               "&:hover": {
-                background: "#13131a",
+                background: theme.palette.mode === "dark" ? "#13131a" : "#cbccd1",
               },
               "&& .Mui-selected": {
                 backgroundColor: renderTreeItemBgColor(index),
