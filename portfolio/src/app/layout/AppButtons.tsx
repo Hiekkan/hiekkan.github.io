@@ -2,7 +2,7 @@ import { Button, Box, Paper } from "@mui/material";
 import React from "react";
 import { VscMarkdown, VscChromeClose } from "react-icons/vsc";
 import { useNavigate } from "react-router-dom";
-import { Container } from "@mui/system";
+import { Container, useTheme } from "@mui/system";
 
 interface Props {
   pages: {
@@ -28,33 +28,26 @@ export default function AppButtons({
   setVisiblePageIndexs,
 }: Props) {
   const navigate = useNavigate();
+  const theme = useTheme();
 
-  /*function renderButtonBgColor(index: number) {
-    return selectedIndex === index ? "#1e1e1e" : "#2d2d2d";
-  }*/
+  function renderButtonBgColor() {
+    if (theme.palette.mode === "dark") {
+      return "#16161e";
+    } else {
+      return "#cbccd1";
+    }
+  }
 
   function renderButtonColor(index: number) {
-    return selectedIndex === index ? "#8388a8" : "#44475c";
+    if (theme.palette.mode === "dark") {
+      return selectedIndex === index ? "#8388a8" : "#44475c";
+    } else {
+      return selectedIndex === index ? "#4c505e" : "#828594";
+    }
   }
-
-  /*function renderCloseButtonBgColor(index: number) {
-    return selectedIndex === index ? "#1a1b26" : "#2d2d2d";
-  }
-
-  function renderCloseButtonColor(index: number) {
-    return selectedIndex === index ? "#white" : "#1a1b26";
-  }
-
-  function renderCloseButtonHoverBgColor(index: number) {
-    return selectedIndex === index ? "#333c43" : "#333c43";
-  }
-
-  function renderCloseButtonHoverColor(index: number) {
-      return selectedIndex !== index ? "#817d7a" : "#white";
-  }*/
 
   function renderBorderButton(index: number) {
-    return selectedIndex === index ? "5px solid #3d59a1" : "none";
+    return selectedIndex === index ? "2px solid #3d59a1" : "none";
   }
 
   function renderPageButton(index: number, name: string, route: string) {
@@ -82,11 +75,11 @@ export default function AppButtons({
             borderRadius: 0,
             px: 2,
             textTransform: "none",
-            backgroundColor: "#1a1b26",
+            backgroundColor: renderButtonBgColor(),
             color: renderButtonColor(index),
             "&.MuiButtonBase-root:hover": {
-              color: "#8388a8",
-              backgroundColor: "#1a1b26"
+              color: theme.palette.mode === "dark" ? "#8388a8" : "#828594",
+              backgroundColor: renderButtonBgColor()
             },
             transition: "none",
           }}
@@ -102,10 +95,10 @@ export default function AppButtons({
             sx={{
               ml: 1,
               mr: -1,
-              backgroundColor: "#1a1b26",
-              color: "white",
+              backgroundColor: renderButtonBgColor(),
+              color: theme.palette.mode === "dark" ? "white" : "#4c505e",
               "&.MuiPaper-root:hover": {
-                bgcolor: "#202330",
+                bgcolor: theme.palette.mode === "dark" ? "#202330" : "#828594",
               },
               width: 20,
               height: 20,
@@ -135,17 +128,15 @@ export default function AppButtons({
         overflowX: "auto",
         overflowY: "hidden",
         whiteSpace: "nowrap",
-        backgroundColor: "#1a1b26",
+        backgroundColor: theme.palette.mode === "dark" ? "#16161e" : "#cbccd1",
         "&::-webkit-scrollbar": {
           height: "3px",
         },
         "&::-webkit-scrollbar-thumb": {
-          backgroundColor:
-            "#535353",
+          backgroundColor: theme.palette.mode === "dark" ? "#535353" : "#8c8c8c",
         },
         "&::-webkit-darkScrollbar-thumb": {
-          backgroundColor:
-            "#ffffff",
+          backgroundColor: theme.palette.mode === "dark" ? "#ffffff" : "#8c8c8c",
         },
       }}
     >
