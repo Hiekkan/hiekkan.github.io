@@ -29,15 +29,15 @@ export default function AppButtons({
 }: Props) {
   const navigate = useNavigate();
 
-  function renderButtonBgColor(index: number) {
+  /*function renderButtonBgColor(index: number) {
     return selectedIndex === index ? "#1e1e1e" : "#2d2d2d";
-  }
+  }*/
 
   function renderButtonColor(index: number) {
     return selectedIndex === index ? "#8388a8" : "#44475c";
   }
 
-  function renderCloseButtonBgColor(index: number) {
+  /*function renderCloseButtonBgColor(index: number) {
     return selectedIndex === index ? "#1a1b26" : "#2d2d2d";
   }
 
@@ -51,7 +51,7 @@ export default function AppButtons({
 
   function renderCloseButtonHoverColor(index: number) {
       return selectedIndex !== index ? "#817d7a" : "#white";
-  }
+  }*/
 
   function renderBorderButton(index: number) {
     return selectedIndex === index ? "5px solid #3d59a1" : "none";
