@@ -99,7 +99,7 @@ export default function App() {
                   <Typography
                     variant="caption"
                     color="#44475c"
-                    sx={{ ml: 3, fontFamily: "Segoe WPC,Segoe UI,sans-serif"}}
+                    sx={{ ml: 3 }}
                   >
                     EXPLORER
                   </Typography>

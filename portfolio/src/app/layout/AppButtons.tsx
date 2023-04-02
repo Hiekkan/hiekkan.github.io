@@ -84,7 +84,6 @@ export default function AppButtons({
             textTransform: "none",
             backgroundColor: "#1a1b26",
             color: renderButtonColor(index),
-            fontFamily: "Segoe WPC,Segoe UI,sans-serif",
             "&.MuiButtonBase-root:hover": {
               color: "#8388a8",
               backgroundColor: "#1a1b26"
@@ -136,7 +135,7 @@ export default function AppButtons({
         overflowX: "auto",
         overflowY: "hidden",
         whiteSpace: "nowrap",
-        backgroundColor: "#252527",
+        backgroundColor: "#1a1b26",
         "&::-webkit-scrollbar": {
           height: "3px",
         },

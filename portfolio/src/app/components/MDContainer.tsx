@@ -66,7 +66,6 @@ import {
             marginBlockEnd: "0.3em",
             fontWeight: "bold",
             lineHeight: 1.25,
-            fontFamily: "Segoe WPC,Segoe UI,sans-serif"
           }}
         >
           {props.children}
@@ -88,7 +87,6 @@ import {
             marginBlockEnd: "0.3em",
             fontWeight: "bold",
             lineHeight: 1.25,
-            fontFamily: "Segoe WPC,Segoe UI,sans-serif !important"
           }}
         >
           {props.children}
@@ -99,7 +97,7 @@ import {
   }
   
   function MarkdownParagraph(props: { children: ReactNode }) {
-    if (!props.children) return <Typography sx={{fontFamily: "Segoe WPC,Segoe UI,sans-serif !important"}}>{props.children}</Typography>;
+    if (!props.children) return <Typography>{props.children}</Typography>;
   
     const element: any = props.children;
     let result = [];
@@ -117,7 +115,7 @@ import {
           result.push({ ...e });
         } else {
           result.push(
-            <Typography sx={{fontFamily: "Segoe WPC,Segoe UI,sans-serif !important"}} key={e} display="inline">
+            <Typography key={e} display="inline">
               {e}
             </Typography>
           );
@@ -128,7 +126,7 @@ import {
         if (e.type) {
           result.push({ ...e });
         } else {
-          result.push(<Typography sx={{fontFamily: "Segoe WPC,Segoe UI,sans-serif !important"}} key={e}>{e}</Typography>);
+          result.push(<Typography key={e}>{e}</Typography>);
         }
       }
     }
@@ -148,7 +146,7 @@ import {
     useEffect(() => {
       let title = pathname.substring(1, pathname.length);
       title = title[0].toUpperCase() + title.substring(1);
-      document.title = `${process.env.REACT_APP_NAME!} | ${title}`;
+      document.title = `${"NJ Portfolio"} | ${title}`;
     }, [pathname]);
   
     return (

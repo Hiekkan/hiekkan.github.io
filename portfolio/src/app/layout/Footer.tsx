@@ -59,7 +59,7 @@ export default function Footer() {
               }}
             >
               <IoIosGitBranch fontSize="0.9rem" />
-              <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem", fontFamily: "Segoe WPC,Segoe UI,sans-serif" }}>
+              <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem" }}>
                 main
               </Typography>
             </Box>
@@ -110,7 +110,7 @@ export default function Footer() {
                   pt: 0.3,
                 }}
               >
-                <Typography sx={{ fontSize: "0.6rem", fontFamily: "Segoe WPC,Segoe UI,sans-serif" }}>0</Typography>
+                <Typography sx={{ fontSize: "0.6rem" }}>0</Typography>
               </Box>
 
               <Box
@@ -131,7 +131,7 @@ export default function Footer() {
                   pt: 0.3,
                 }}
               >
-                <Typography sx={{ fontSize: "0.6rem", fontFamily: "Segoe WPC,Segoe UI,sans-serif" }}>0</Typography>
+                <Typography sx={{ fontSize: "0.6rem" }}>0</Typography>
               </Box>
             </Stack>
           </Stack>
@@ -162,7 +162,7 @@ export default function Footer() {
                 }}
               >
                 <VscCheck fontSize="0.9rem" />
-                <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem", fontFamily: "Segoe WPC,Segoe UI,sans-serif" }}>
+                <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem" }}>
                   Prettier
                 </Typography>
               </Box>
