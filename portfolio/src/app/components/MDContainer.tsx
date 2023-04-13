@@ -133,6 +133,12 @@ import {
   
     return <>{result}</>;
   }
+
+  function MarkdownImage(props: any) {
+    return <>
+      <img src={props.src} alt={props.alt} width={props.width} height={props.height} title={props.title}>{props.children}</img>
+    </>
+  }
   
   export default function MDContainer({ path }: Props) {
     const [content, setContent] = useState("");
@@ -166,6 +172,7 @@ import {
             tfoot: TableFooter,
             h1: MarkdownH1,
             h2: MarkdownH2,
+            image: MarkdownImage
           }}
           remarkPlugins={[remarkGfm, remarkBreaks]}
           rehypePlugins={[rehypeRaw]}
