@@ -38,14 +38,14 @@ import {
                 display="flex"
                 justifyContent={{ xs: "center", sm: "flex-start" }}
               >
-                <Typography variant="h3">Dunno</Typography>
+                <Typography variant="h3">Nora Jentzsch</Typography>
               </Grid>
               <Grid
                 display="flex"
                 justifyContent={{ xs: "center", sm: "flex-start" }}
               >
                 <Typography variant="subtitle1" gutterBottom>
-                    Hehe
+                    A full-blooded developer
                 </Typography>
               </Grid>
               <Grid
