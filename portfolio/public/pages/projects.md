@@ -129,6 +129,8 @@ Used technologies:
 This is my very first website I developed during my first year in the apprenticeship.
 At some point I will redo and improve this project.
 
+&nbsp;
+
 Project link: [Muse Website](https://github.com/Hiekkan/Muse_website)
 Used technologies:
 
