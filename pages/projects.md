@@ -7,15 +7,15 @@ In this page I present some of my projects
 
 <img src="https://github.com/Hiekkan/instagram_ruby_on_rails/blob/main/screenshots/LoginPage.png?raw=true"
      alt="Instagram Loginpage"
-     width="900px" height="400px" />
+     width="80%" height="100%" />
 
 <img src="https://github.com/Hiekkan/instagram_ruby_on_rails/blob/main/screenshots/FrontPage.png?raw=true"
      alt="Instagram Frontpage"
-     width="900px" height="400px" />
+     width="80%" height="100%" />
 
 <img src="https://github.com/Hiekkan/instagram_ruby_on_rails/blob/main/screenshots/DetailPost.png?raw=true"
      alt="Instagram Detail post"
-     width="900px" height="400px" />
+     width="80%" height="100%" />
 
 This project was part of a school project during my apprenticeship.
 
@@ -52,25 +52,25 @@ Used technologies:
 
 <img src="../images/Pokedex_Home.png"
      alt="Pokédex Home"
-     width="1000px" height="700px" style="object-fit: cover;" />
+     width="80%" height="100%" style="object-fit: cover;" />
 
 <img src="../images/Pokedex_About.png"
      alt="Pokédex About"
-     width="800px" height="800px" style="object-fit: scale-down;" />
+     width="80%" height="100%" style="object-fit: scale-down;" />
 
 <img src="../images/Pokedex_Stats.png"
      alt="Pokédex Stats"
-     width="800px" height="800px" style="object-fit: scale-down;" />
+     width="80%" height="100%" style="object-fit: scale-down;" />
 
 <img src="../images/Pokedex_Evolution.png"
      alt="Pokédex Evolution"
-     width="800px" height="800px" style="object-fit: scale-down;" />
+     width="80%" height="100%" style="object-fit: scale-down;" />
 
 Currently work in progress. Started designing the frontend in figma and tested out the Pokémon REST API.
 
 Link to figma: [Pokédex concept](https://www.figma.com/file/NtRUou7dHmWz5B1Y37ib1C/Pok%C3%A9dex?node-id=0%3A1&t=y8Otd3kvblpH7zyA-1)
 
-Technologies I'm going to use:
+Technology I'm going to use:
 
 &nbsp;
 
@@ -118,11 +118,11 @@ Used technologies:
 
 <img src="https://github.com/Hiekkan/Muse_website/blob/main/screenshots/Frontpage.png?raw=true"
      alt="Muse Homepage"
-     width="800px" height="400px" style="object-fit: scale-down;" />
+     width="80%" height="100%" style="object-fit: scale-down;" />
 
 <img src="https://github.com/Hiekkan/Muse_website/blob/main/screenshots/Band.png?raw=true"
      alt="Muse Band page"
-     width="800px" height="400px" style="object-fit: scale-down;" />
+     width="80%" height="100%" style="object-fit: scale-down;" />
 
 &nbsp;
 
@@ -162,7 +162,7 @@ Used technologies:
 
 <img src="https://github.com/Hiekkan/Samsung_watchface_Terminal/blob/main/icon_V2.png?raw=true"
      alt="Samsung watchface"
-     width="400px" height="400px" />
+     width="50%" height="50%" />
 
 I designed this watchface also based on my favorite VS Code theme called Tokyo Night.
 
