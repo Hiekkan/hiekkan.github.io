@@ -55,6 +55,7 @@ export default function AppButtons({
       <Box
         key={index}
         sx={{
+          height: "33px",
           display: "inline-block",
           borderBottom: renderBorderButton(index), 
           alignItems: "center",
@@ -72,6 +73,7 @@ export default function AppButtons({
             navigate(route);
           }}
           sx={{
+            height: "31px",
             borderRadius: 0,
             px: 2,
             textTransform: "none",

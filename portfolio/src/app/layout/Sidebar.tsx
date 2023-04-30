@@ -73,19 +73,7 @@ export default function Sidebar({
             <VscFiles />
           </Box>
         </Box>
-        <Tooltip title="Source of this project" arrow placement="right" 
-          componentsProps={{
-          tooltip: {
-            sx: {
-              bgcolor: darkMode ? "#16161e" : "#d5d6db",
-              color: darkMode ? "#8388a8" : "#16161e",
-              border: darkMode ? "0.1em solid black" : "none",
-              '& .MuiTooltip-arrow': {
-                color: darkMode ? "#16161e" : "#d5d6db",
-              }
-            }
-          }
-        }}>
+        <Tooltip title="Source of this project" arrow placement="right">
           <Link
             target="_blank"
             href={"https://github.com/Hiekkan/hiekkan.github.io"}
@@ -116,19 +104,7 @@ export default function Sidebar({
         <Divider sx={{ m: 0.5 }} />
 
         {links.map((link) => (
-          <Tooltip title={link.title} arrow placement="right" key={link.index}
-          componentsProps={{
-            tooltip: {
-              sx: {
-                bgcolor: darkMode ? "#16161e" : "#d5d6db",
-                color: darkMode ? "#8388a8" : "#16161e",
-                border: darkMode ? "0.1em solid black" : "none",
-                '& .MuiTooltip-arrow': {
-                  color: darkMode ? "#16161e" : "#d5d6db",
-                }
-              }
-            }
-          }}>
+          <Tooltip title={link.title} arrow placement="right" key={link.index}>
             <Link
               target="_blank"
               href={link.href}
