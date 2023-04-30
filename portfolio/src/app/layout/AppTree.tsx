@@ -70,7 +70,20 @@ export default function AppTree({
       aria-label="file system navigator"
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
-      sx={{ minWidth: 220, fontSize: "0.9rem", }}
+      sx={{ 
+        minWidth: 220, 
+        fontSize: "0.9rem",
+        ".MuiTreeItem-label": {
+          fontSize: "0.9rem",
+        },
+        "&& .Mui-expanded": {
+          fontSize: "0.9rem",
+        },
+        "&& .MuiTreeItem-content .MuiTreeItem-label": {
+          padding: 0,
+          fontSize: "0.9rem",
+        },
+      }}
       defaultExpanded={["-1"]}
     >
       <TreeItem
@@ -86,7 +99,7 @@ export default function AppTree({
           "&:hover": {
             backgroundColor: theme.palette.mode === "dark" ? "#16161e" : "#cbccd1",
           },
-          "&& .MuiTreeItem-content": {
+          "&& .MuiTreeItem-content .MuiTreeItem-label": {
             padding: 0,
             fontSize: "0.9rem",
           },
@@ -99,6 +112,9 @@ export default function AppTree({
             fontSize: "0.9rem",
           },
           ".MuiTreeItem-label": {
+            fontSize: "0.9rem",
+          },
+          "&& .Mui-expanded": {
             fontSize: "0.9rem",
           },
         }}
@@ -118,8 +134,19 @@ export default function AppTree({
                 backgroundColor: renderTreeItemBgColor(index),
                 color: renderTreeItemColor(index),
               },
-              "&& .MuiTreeItem-content": {
+              "&& .MuiTreeItem-content .MuiTreeItem-label": {
+                fontSize: "0.9rem",
                 padding: 0,
+              },
+              ".MuiTreeItem-label": {
+                fontSize: "0.9rem",
+              },
+              "&& .Mui-focused": {
+                backgroundColor: renderTreeItemBgColor(-1),
+                fontSize: "0.9rem",
+              },
+              "&& .Mui-expanded": {
+                fontSize: "0.9rem",
               },
             }}
             icon={<VscMarkdown color="#6997d5" />}
