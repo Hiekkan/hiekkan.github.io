@@ -1,6 +1,34 @@
 # Projects
 In this page I present some of my projects
 
+## My portfolio
+
+My very first portfolio using React based on my favorite VS Code theme called Tokyo Night.
+
+Used technologies:
+
+&nbsp;
+
+<a href="https://react.dev/" target="_blank" rel="noreferrer">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+      alt="react"
+      width="40"
+      height="40"
+      title="react"
+    />
+  </a>
+
+<a href="https://www.markdownguide.org/" target="_blank" rel="noreferrer">
+    <img
+      src="https://plugins.jetbrains.com/files/18897/166369/icon/pluginIcon.svg"
+      alt="Markdown"
+      width="40"
+      height="40"
+      title="Markdown"
+    />
+</a>
+
 ## Instagram Clone school project
 
 &nbsp;
@@ -16,6 +44,8 @@ In this page I present some of my projects
 <img src="https://github.com/Hiekkan/instagram_ruby_on_rails/blob/main/screenshots/DetailPost.png?raw=true"
      alt="Instagram Detail post"
      width="80%" height="100%" />
+
+&nbsp;
 
 This project was part of a school project during my apprenticeship.
 
@@ -46,124 +76,34 @@ Used technologies:
     />
 </a>
 
-## Pokédex in Blazor (WIP)
-
-&nbsp;
-
-<img src="../images/Pokedex_Home.png"
-     alt="Pokédex Home"
-     width="80%" height="100%" style="object-fit: cover;" />
-
-<img src="../images/Pokedex_About.png"
-     alt="Pokédex About"
-     width="80%" height="100%" style="object-fit: scale-down;" />
-
-<img src="../images/Pokedex_Stats.png"
-     alt="Pokédex Stats"
-     width="80%" height="100%" style="object-fit: scale-down;" />
-
-<img src="../images/Pokedex_Evolution.png"
-     alt="Pokédex Evolution"
-     width="80%" height="100%" style="object-fit: scale-down;" />
-
-Currently work in progress. Started designing the frontend in figma and tested out the Pokémon REST API.
-
-Link to figma: [Pokédex concept](https://www.figma.com/file/NtRUou7dHmWz5B1Y37ib1C/Pok%C3%A9dex?node-id=0%3A1&t=y8Otd3kvblpH7zyA-1)
-
-Technology I'm going to use:
-
-&nbsp;
-
-<a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" target="_blank" rel="noreferrer">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Blazor.png/600px-Blazor.png"
-      alt="Blazor"
-      width="40"
-      height="40"
-      title="Blazor"
-    />
-</a>
-
-## My portfolio
-
-My very first portfolio using React based on my favorite VS Code theme called Tokyo Night.
-
-Used technologies:
-
-&nbsp;
-
-<a href="https://react.dev/" target="_blank" rel="noreferrer">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-      alt="react"
-      width="40"
-      height="40"
-      title="react"
-    />
-  </a>
-
-<a href="https://www.markdownguide.org/" target="_blank" rel="noreferrer">
-    <img
-      src="https://plugins.jetbrains.com/files/18897/166369/icon/pluginIcon.svg"
-      alt="Markdown"
-      width="40"
-      height="40"
-      title="Markdown"
-    />
-</a>
-
-## First website in pure HTML & CSS
-
-&nbsp;
-
-<img src="https://github.com/Hiekkan/Muse_website/blob/main/screenshots/Frontpage.png?raw=true"
-     alt="Muse Homepage"
-     width="80%" height="100%" style="object-fit: scale-down;" />
-
-<img src="https://github.com/Hiekkan/Muse_website/blob/main/screenshots/Band.png?raw=true"
-     alt="Muse Band page"
-     width="80%" height="100%" style="object-fit: scale-down;" />
-
-&nbsp;
-
-This is my very first website I developed during my first year in the apprenticeship.
-At some point I will redo and improve this project.
-
-&nbsp;
-
-Project link: [Muse Website](https://github.com/Hiekkan/Muse_website)
-Used technologies:
-
-&nbsp;
-
-<a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-      alt="html5"
-      width="40"
-      height="40"
-      title="html"
-    />
-</a>
-
-<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-      alt="css3"
-      width="40"
-      height="40"
-      title="css"
-    />
-</a>
-
 ## Samsung Terminal watchface
 
 &nbsp;
 
 <img src="https://github.com/Hiekkan/Samsung_watchface_Terminal/blob/main/icon_V2.png?raw=true"
      alt="Samsung watchface"
-     width="50%" height="50%" />
+     width="30%" height="30%" />
+
+&nbsp;
 
 I designed this watchface also based on my favorite VS Code theme called Tokyo Night.
+
+&nbsp;
+
+## My Home Assistant Dashboard (WIP)
+
+&nbsp;
+
+<img src="../images/HA-Homescreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
+
+<img src="../images/HA-Gamingroomscreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
+
+<img src="../images/HA-Networkscreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
+
+<img src="../images/HA-Remotescreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
+
+&nbsp;
+
+This is my mobile dashboard in Home Assistant. I used mostly this cool theme [Minimalist UI](https://ui-lovelace-minimalist.github.io/UI/)
 
 &nbsp;

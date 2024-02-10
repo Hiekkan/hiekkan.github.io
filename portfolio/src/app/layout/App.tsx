@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
-import { isBrowser } from "react-device-detect";
 import {
   Container,
   createTheme,
@@ -18,6 +17,7 @@ import AppButtons from './AppButtons';
 import Home from '../pages/Home';
 import MDContainer from '../components/MDContainer';
 import Footer from './Footer';
+import useCheckMobileScreen from '../components/CheckMobileScreen';
 
 interface Page {
   index: number;
@@ -35,8 +35,9 @@ function initVisiblePageIndexs(pages: Page[]) {
 }
 
 export default function App() {
+  const isMobile = useCheckMobileScreen();
   const navigate = useNavigate();
-  const [expanded, setExpanded] = useState(isBrowser);
+  const [expanded, setExpanded] = useState(!isMobile);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [currentComponent, setCurrentComponent] = useState("");
   const [visiblePageIndexs, setVisiblePageIndexs] = useState(
