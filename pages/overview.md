@@ -1,15 +1,19 @@
 # Overview
 
-Hello 😊, my name is Nora and I work as a Sharepoint Developer at Swiss Post 📯.
+Hello 😊, my name is Nora, and I work as a SharePoint Developer at Swiss Post. 📯
 
 &nbsp;
 
-Currently I'm learning Three.js and Blender to create stunning 3D based websites.
-Besides developing I'm into video games, movies and TV shows.
-Or you can find me at Metal concerts 🤘🏻.
+I enjoy tinkering with my server and smart home. 👩🏼‍💻
+In addition to my development work, I have a passion for watching arthouse movies
+and playing video games with friends. You can often find me at Metal concerts. 🤘🏻
 
 &nbsp;
 
-You can find my projects in the next tab.
+Currently, I'm pursuing studies in Interaction Design to deepen my understanding of UI/UX design.
+I believe this expertise will enhance my abilities as a developer. 💪🏼
 
-If you want to know more about me, you can contact me anytime.
+&nbsp;
+
+You can explore my projects in the next tab.
+If you'd like to learn more about me, feel free to reach out anytime.
