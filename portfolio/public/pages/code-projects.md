@@ -1,5 +1,6 @@
-# Projects
-In this page I present some of my projects
+# Code Projects
+
+In this page I present some of my coding projects
 
 ## My portfolio
 
@@ -28,6 +29,24 @@ Used technologies:
       title="Markdown"
     />
 </a>
+
+## My Home Assistant Dashboard (WIP)
+
+&nbsp;
+
+<img src="../images/HA-Homescreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
+
+<img src="../images/HA-Gamingroomscreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
+
+<img src="../images/HA-Networkscreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
+
+<img src="../images/HA-Remotescreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
+
+&nbsp;
+
+This is my mobile dashboard in Home Assistant. I used mostly this cool theme [Minimalist UI](https://ui-lovelace-minimalist.github.io/UI/)
+
+&nbsp;
 
 ## Instagram Clone school project
 
@@ -75,35 +94,5 @@ Used technologies:
       title="Bootstrap"
     />
 </a>
-
-## Samsung Terminal watchface
-
-&nbsp;
-
-<img src="https://github.com/Hiekkan/Samsung_watchface_Terminal/blob/main/icon_V2.png?raw=true"
-     alt="Samsung watchface"
-     width="30%" height="30%" />
-
-&nbsp;
-
-I designed this watchface also based on my favorite VS Code theme called Tokyo Night.
-
-&nbsp;
-
-## My Home Assistant Dashboard (WIP)
-
-&nbsp;
-
-<img src="../images/HA-Homescreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
-
-<img src="../images/HA-Gamingroomscreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
-
-<img src="../images/HA-Networkscreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
-
-<img src="../images/HA-Remotescreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
-
-&nbsp;
-
-This is my mobile dashboard in Home Assistant. I used mostly this cool theme [Minimalist UI](https://ui-lovelace-minimalist.github.io/UI/)
 
 &nbsp;
