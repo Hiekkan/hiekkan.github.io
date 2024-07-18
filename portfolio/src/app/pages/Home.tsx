@@ -42,7 +42,7 @@ import {
                 justifyContent={{ xs: "center", sm: "flex-start" }}
               >
                 <Typography variant="subtitle1" gutterBottom>
-                    A full-blooded developer
+                    A passionate developer
                 </Typography>
               </Grid>
               <Grid

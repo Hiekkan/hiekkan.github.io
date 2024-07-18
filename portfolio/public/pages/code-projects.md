@@ -30,24 +30,6 @@ Used technologies:
     />
 </a>
 
-## My Home Assistant Dashboard (WIP)
-
-&nbsp;
-
-<img src="../images/HA-Homescreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
-
-<img src="../images/HA-Gamingroomscreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
-
-<img src="../images/HA-Networkscreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
-
-<img src="../images/HA-Remotescreen.png" alt="HomeAssistant Homescreen" width="23%" height="80%" style="object-fit: scale-down;" />
-
-&nbsp;
-
-This is my mobile dashboard in Home Assistant. I used mostly this cool theme [Minimalist UI](https://ui-lovelace-minimalist.github.io/UI/)
-
-&nbsp;
-
 ## Instagram Clone school project
 
 &nbsp;
