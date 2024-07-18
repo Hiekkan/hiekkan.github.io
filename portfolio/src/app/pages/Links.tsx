@@ -1,7 +1,6 @@
 import {
     FaGithub,
-    FaLinkedin,
-    FaEnvelope,
+    FaLinkedin
   } from "react-icons/fa";
   
   export const links = [
