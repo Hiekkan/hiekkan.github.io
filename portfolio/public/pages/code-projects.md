@@ -1,12 +1,14 @@
 # Code Projects
 
-In this page I present some of my coding projects
+Showcasing my Coding Projects
 
 ## My portfolio
 
-My very first portfolio using React based on my favorite VS Code theme called Tokyo Night.
+My first portfolio project, built using React, inspired by my favorite VS Code theme, Tokyo Night.
 
-Used technologies:
+&nbsp;
+
+**Technologies Used:**
 
 &nbsp;
 
@@ -30,7 +32,17 @@ Used technologies:
     />
 </a>
 
-## Instagram Clone school project
+## Instagram Clone
+
+A school project completed during my apprenticeship, featuring an Instagram clone with key functionalities.
+
+&nbsp;
+
+**Key Features:**
+
+- **Login Page:** Mimics Instagram’s authentication process.
+- **Front Page:** Displays user feeds and posts.
+- **Detail Post:** Shows individual post details with comments.
 
 &nbsp;
 
@@ -48,12 +60,7 @@ Used technologies:
 
 &nbsp;
 
-This project was part of a school project during my apprenticeship.
-
-&nbsp;
-
-Project link: [Instagram Ruby on Rails](https://github.com/Hiekkan/instagram_ruby_on_rails)
-Used technologies:
+**Technologies Used:**
 
 &nbsp;
 
@@ -76,5 +83,9 @@ Used technologies:
       title="Bootstrap"
     />
 </a>
+
+&nbsp;
+
+**Project link:** [Instagram Clone](https://github.com/Hiekkan/instagram_ruby_on_rails)
 
 &nbsp;
