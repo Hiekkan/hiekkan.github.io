@@ -19,6 +19,7 @@ import {
   import rehypeRaw from "rehype-raw";
   import remarkBreaks from "remark-breaks";
   import remarkGfm from "remark-gfm";
+  import { LazyLoadImage } from "react-lazy-load-image-component";
   
   interface Props {
     path: string;
@@ -136,7 +137,7 @@ import {
 
   function MarkdownImage(props: any) {
     return <>
-      <img src={props.src} alt={props.alt} width={props.width} height={props.height} title={props.title}>{props.children}</img>
+      <LazyLoadImage effect="blur" src={props.src} alt={props.alt} width={props.width} height={props.height} title={props.title}>{props.children}</LazyLoadImage>
     </>
   }
   

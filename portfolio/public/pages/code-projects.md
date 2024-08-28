@@ -4,7 +4,15 @@ Showcasing my Coding Projects
 
 ## My portfolio
 
-My first portfolio project, built using React, inspired by my favorite VS Code theme, Tokyo Night.
+A personal portfolio project, built with React, inspired by my favorite VS Code theme, Tokyo Night.
+
+&nbsp;
+
+**Key Features:**
+
+- **VS Code Interface:** Mimics the Visual Studio Code experience for an interactive portfolio.
+- **Theme Customization:** Switch between dark and light themes—perfect for those on the "light side".
+- **Responsive:** Ensures a seamless experience across devices.
 
 &nbsp;
 

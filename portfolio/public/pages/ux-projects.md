@@ -61,7 +61,7 @@ Recreated a home assistant dashboard in Figma with a 3D-based design for an imme
 **Key Features:**
 
 - **3D Visualization:** Designed an apartment layout using a 3D furniture tool, rendered for the dashboard base.
-- **Interactive Elements:** Employed Figma's variables to allow dynamic control over lighting within the dashboard.
+- **Interactive Elements:** Implemented Figma's variables to allow dynamic control over lighting within the dashboard.
 
 **Outcome:**
 Achieved a visually appealing and functional interface that integrates 3D visuals with interactive capabilities for a seamless user experience.
@@ -81,7 +81,7 @@ Designed a landing page for Fitschi ski bindings as part of a prediploma project
 
 **Key Features:**
 
-- **Integrated Branding:** Showcased the ski tour while seamlessly integrating Fitschi’s bindings and a brand ambassador.
+- **Integrated Branding:** Showcased the ski tour while seamlessly integrating Fitschi’s bindings.
 - **Enhanced Credibility:** Incorporated a brand ambassador to boost brand presence.
 
 **Outcome:**
