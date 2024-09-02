@@ -54,20 +54,6 @@ A school project completed during my apprenticeship, featuring an Instagram clon
 
 &nbsp;
 
-<img src="https://github.com/Hiekkan/instagram_ruby_on_rails/blob/main/screenshots/LoginPage.png?raw=true"
-     alt="Instagram Loginpage"
-     width="80%" height="100%" />
-
-<img src="https://github.com/Hiekkan/instagram_ruby_on_rails/blob/main/screenshots/FrontPage.png?raw=true"
-     alt="Instagram Frontpage"
-     width="80%" height="100%" />
-
-<img src="https://github.com/Hiekkan/instagram_ruby_on_rails/blob/main/screenshots/DetailPost.png?raw=true"
-     alt="Instagram Detail post"
-     width="80%" height="100%" />
-
-&nbsp;
-
 **Technologies Used:**
 
 &nbsp;
@@ -97,3 +83,15 @@ A school project completed during my apprenticeship, featuring an Instagram clon
 **Project link:** [Instagram Clone](https://github.com/Hiekkan/instagram_ruby_on_rails)
 
 &nbsp;
+
+<img src="https://github.com/Hiekkan/instagram_ruby_on_rails/blob/main/screenshots/LoginPage.png?raw=true"
+     alt="Instagram Loginpage"
+     width="80%" height="100%" />
+
+<img src="https://github.com/Hiekkan/instagram_ruby_on_rails/blob/main/screenshots/FrontPage.png?raw=true"
+     alt="Instagram Frontpage"
+     width="80%" height="100%" />
+
+<img src="https://github.com/Hiekkan/instagram_ruby_on_rails/blob/main/screenshots/DetailPost.png?raw=true"
+     alt="Instagram Detail post"
+     width="80%" height="100%" />
