@@ -4,7 +4,7 @@ Hello 😊, my name is Nora, and I work as a SharePoint Developer at Swiss Post.
 
 &nbsp;
 
-I enjoy tinkering with my server and smart home setup. 👩🏼‍💻 When I'm not coding, I’m a big movie buff who loves discovering new films. 🎬
+I enjoy tinkering with my server and smart home setup. 👩🏼‍💻 Apart from coding, I’m a big movie buff who loves discovering new films. 🎬
 I also like playing video games with friends and going to metal concerts. 🤘🏻
 
 &nbsp;
