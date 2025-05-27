@@ -32,7 +32,7 @@ A personal portfolio project, built with React, inspired by my favorite VS Code 
 
 <a href="https://www.markdownguide.org/" target="_blank" rel="noreferrer">
     <img
-      src="https://plugins.jetbrains.com/files/18897/166369/icon/pluginIcon.svg"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg"
       alt="Markdown"
       width="40"
       height="40"
