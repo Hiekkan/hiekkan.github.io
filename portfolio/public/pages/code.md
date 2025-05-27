@@ -1,6 +1,6 @@
 # Code Projects
 
-Showcasing my Coding Projects
+Showcasing my coding projects
 
 ## My portfolio
 
@@ -11,7 +11,7 @@ A personal portfolio project, built with React, inspired by my favorite VS Code 
 **Key Features:**
 
 - **VS Code Interface:** Mimics the Visual Studio Code experience for an interactive portfolio.
-- **Theme Customization:** Switch between dark and light themes—perfect for those on the "light side".
+- **Theme Customization:** Switch between dark and light themes, perfect for those on the "light side".
 - **Responsive:** Ensures a seamless experience across devices.
 
 &nbsp;
@@ -32,7 +32,7 @@ A personal portfolio project, built with React, inspired by my favorite VS Code 
 
 <a href="https://www.markdownguide.org/" target="_blank" rel="noreferrer">
     <img
-      src="https://plugins.jetbrains.com/files/18897/166369/icon/pluginIcon.svg"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg"
       alt="Markdown"
       width="40"
       height="40"

@@ -1,6 +1,6 @@
 # Overview
 
-Hello 😊, my name is Nora, and I work as a SharePoint Developer at Swiss Post. 📯
+Hello 😊 I'm Nora, a SharePoint Developer at Swiss Post. 📯
 
 &nbsp;
 
