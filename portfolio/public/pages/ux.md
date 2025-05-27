@@ -6,12 +6,14 @@ Showcasing projects from my Interaction Design studies
 
 &nbsp;
 
-
+<img src="../images/SRF_Sport.gif" alt="SRF Sport Figma Showcase" width="20%" height="30%" />
 
 &nbsp;
 
 **Project Overview:**
 Redesigned the SRF Sport mobile experience with a focus on enhancing emotional engagement and live interaction during sports broadcasts.
+
+&nbsp;
 
 **Key Features:**
 
@@ -28,12 +30,14 @@ Redesigned the SRF Sport mobile experience with a focus on enhancing emotional e
 
 &nbsp;
 
-
+<img src="../images/Berlin_Trip.gif" alt="Wordpress Berlin Showcase" width="60%" height="80%" />
 
 &nbsp;
 
 **Project Overview:**
 Explored the topic “*How is our way of working as designers changing?*” during a study trip to Berlin. Our group focused on the question “*What is real?*” and created a web-based story as the final outcome.
+
+&nbsp;
 
 **Key Features:**
 
@@ -43,6 +47,10 @@ Explored the topic “*How is our way of working as designers changing?*” duri
 
 **Outcome:**
 Created a visually dynamic and content-rich documentation that reflects our group’s critical perspective on authenticity in design, enhanced through thoughtful UX and motion design elements.
+
+&nbsp;
+
+Link: https://b13upa0.myrdbx.io/project/story-iad14-gruppe-01
 
 &nbsp;
 
@@ -56,6 +64,8 @@ Created a visually dynamic and content-rich documentation that reflects our grou
 
 **Project Overview:**
 Developed a travel planner website with the theme "Finland in Winter" to create a seamless user journey and enhance the booking experience.
+
+&nbsp;
 
 **Key Features:**
 
@@ -79,6 +89,8 @@ Designed a user-friendly interface that ensures a smooth, responsive booking exp
 **Project Overview:**
 Rebranded Nike with a focus on longboarding and skateboarding, infusing the brand with an industrial aesthetic.
 
+&nbsp;
+
 **Key Features:**
 
 - **Dynamic Imagery:** Emphasized bold, action-oriented visuals that reflect skateboarding culture’s energy and rawness.
@@ -100,6 +112,8 @@ Created a straightforward yet impactful layout that aligns Nike’s identity wit
 **Project Overview:**
 Recreated a home assistant dashboard in Figma with a 3D-based design for an immersive user experience.
 
+&nbsp;
+
 **Key Features:**
 
 - **3D Visualization:** Designed an apartment layout using a 3D furniture tool, rendered for the dashboard base.
@@ -120,6 +134,8 @@ Achieved a visually appealing and functional interface that integrates 3D visual
 
 **Project Overview:**
 Designed a landing page for Fitschi ski bindings as part of a prediploma project, focusing on a ski tour in Bivio.
+
+&nbsp;
 
 **Key Features:**
 
