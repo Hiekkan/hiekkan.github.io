@@ -30,7 +30,7 @@ Redesigned the SRF Sport mobile experience with a focus on enhancing emotional e
 
 &nbsp;
 
-<img src="../images/Berlin_Trip.gif" alt="Wordpress Berlin Showcase" width="60%" height="80%" />
+<img src="../images/Berlin.gif" alt="Wordpress Berlin Showcase" width="60%" height="80%" />
 
 &nbsp;
 
