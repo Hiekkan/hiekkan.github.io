@@ -3,6 +3,7 @@
 Showcasing projects from my Interaction Design studies
 
 ## SRF Sport -  Interactive Live Experience
+### February - May 2025
 
 &nbsp;
 
@@ -27,6 +28,7 @@ Redesigned the SRF Sport mobile experience with a focus on enhancing emotional e
 &nbsp;
 
 ## Berlin Study Trip
+### May 2025
 
 &nbsp;
 
@@ -54,7 +56,36 @@ Link: https://b13upa0.myrdbx.io/project/story-iad14-gruppe-01
 
 &nbsp;
 
+## Loop the Brand - Volvo
+### November - December 2024
+
+&nbsp;
+
+<video style="width: 30%; height: 40%;" autoplay loop muted playsinline>
+    <source src="../images/Volvo.mp4" type=video/mp4 />
+    Your browser does not support the video tag.
+</video>
+
+&nbsp;
+
+**Project Overview:**
+Created a looping brand animation in After Effects for the car manufacturer Volvo, reimagined with a humorous twist. The goal was to capture brand essence while adding an unexpected, playful layer.
+
+&nbsp;
+
+**Key Features:**
+
+- **Humorous Brand Staging:** Presented Volvo’s image with exaggerated reliability and safety in a lighthearted, self-aware tone.
+- **Seamless Loop:** Designed an endlessly repeating motion to support social media use.
+- **Character & Symbol Animation:** Developed illustrative scenes that align with core brand values like control, durability, and understatement.
+
+**Outcome:**
+A seamless, 10-second motion loop that humorously stages the Volvo brand in a social-media-friendly format, showcasing both technical precision and narrative creativity.
+
+&nbsp;
+
 ## Finland Travel Planner
+### March - June 2024
 
 &nbsp;
 
@@ -79,6 +110,7 @@ Designed a user-friendly interface that ensures a smooth, responsive booking exp
 &nbsp;
 
 ## Nike Rebranding
+### March - April 2024
 
 &nbsp;
 
@@ -102,6 +134,7 @@ Created a straightforward yet impactful layout that aligns Nike’s identity wit
 &nbsp;
 
 ## Smart Home Dashboard
+### February - March 2024
 
 &nbsp;
 
@@ -125,6 +158,7 @@ Achieved a visually appealing and functional interface that integrates 3D visual
 &nbsp;
 
 ## Prediploma Fitschi Ski Bindings
+### January 2024
 
 &nbsp;
 

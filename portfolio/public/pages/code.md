@@ -2,9 +2,42 @@
 
 Showcasing my coding projects
 
-## My portfolio
+## Waste Collection Integration for Home Assistant
+### 2024
+My first open-source contribution to the [HACS Waste Collection Schedule](https://github.com/mampfes/hacs_waste_collection_schedule) custom component for Home Assistant. I added support for my local municipality waste provider.
 
-A personal portfolio project, built with React, inspired by my favorite VS Code theme, Tokyo Night.
+&nbsp;
+
+<img src="../images/HA-Waste.png" alt="Home Assistant Dashboard" width="30%" height="40%" />
+
+&nbsp;
+
+**Key Features:**
+
+- **Custom Integration:** Added support for my municipality waste collection service.
+- **Open Source Workflow:** Worked with the project's structure, forked the repo, and submitted a pull request.
+- **Configurable via YAML:** Enables Home Assistant users in my municipality to easily track upcoming waste pickups.
+
+&nbsp;
+
+**Technologies Used:**
+
+&nbsp;
+
+<a href="https://www.python.org/" target="_blank" rel="noreferrer">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+      alt="python"
+      width="40"
+      height="40"
+      title="python"
+    />
+  </a>
+
+## My portfolio
+### 2023
+
+A personal portfolio project built with React, inspired by my favorite VS Code theme, Tokyo Night.
 
 &nbsp;
 
@@ -41,6 +74,7 @@ A personal portfolio project, built with React, inspired by my favorite VS Code 
 </a>
 
 ## Instagram Clone
+### 2020
 
 A school project completed during my apprenticeship, featuring an Instagram clone with key functionalities.
 
