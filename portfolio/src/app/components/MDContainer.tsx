@@ -15,7 +15,6 @@ import {
   } from "@mui/material";
   import { ReactNode, useEffect, useState } from "react";
   import ReactMarkdown from "react-markdown";
-  import { useLocation } from "react-router-dom";
   import rehypeRaw from "rehype-raw";
   import remarkBreaks from "remark-breaks";
   import remarkGfm from "remark-gfm";
@@ -142,22 +141,34 @@ import {
   }
   
   export default function MDContainer({ path }: Props) {
-    const [content, setContent] = useState("");
-    const { pathname } = useLocation();
-    useEffect(() => {
+  const [content, setContent] = useState<string | React.FC | null>(null);
+
+  useEffect(() => {
+    const isMarkdown = path.endsWith(".md");
+
+    if (isMarkdown) {
       fetch(path)
         .then((res) => res.text())
-        .then((text) => setContent(text));
-    }, [path]);
-  
-    useEffect(() => {
-      let title = pathname.substring(1, pathname.length);
-      title = title[0].toUpperCase() + title.substring(1);
-      document.title = `${"NJ Portfolio"} | ${title}`;
-    }, [pathname]);
-  
-    return (
-      <Container>
+        .then(setContent)
+        .catch((err) => console.error("Markdown fetch error:", err));
+    } else {
+      import(`../../pages/${path}`)
+        .then((mod) => setContent(() => mod.default))
+        .catch((err) => {
+          console.error("Failed to load custom page:", path, err);
+          setContent(() => () => <div>Failed to load page</div>);
+        });
+    }
+
+    const title = path.split("/").pop()?.replace(/\.[^/.]+$/, "");
+    if (title) {
+      document.title = `NJ Portfolio | ${title.charAt(0).toUpperCase()}${title.slice(1)}`;
+    }
+  }, [path]);
+
+  return (
+    <Container>
+      {typeof content === "string" && (
         <ReactMarkdown
           children={content}
           components={{
@@ -178,7 +189,11 @@ import {
           remarkPlugins={[remarkGfm, remarkBreaks]}
           rehypePlugins={[rehypeRaw]}
         />
-      </Container>
-    );
-  }
-  
+      )}
+      {typeof content === "function" && (() => {
+        const Content = content;
+        return <Content />;
+      })()}
+    </Container>
+  );
+}
