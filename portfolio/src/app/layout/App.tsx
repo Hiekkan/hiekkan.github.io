@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import {
   Container,
   createTheme,
@@ -10,14 +10,14 @@ import {
   ThemeProvider,
   Typography,
 } from "@mui/material";
-import { pages } from '../pages/pages';
-import Sidebar from './Sidebar';
-import AppTree from './AppTree';
-import AppButtons from './AppButtons';
-import Home from '../pages/Home';
-import MDContainer from '../components/MDContainer';
-import Footer from './Footer';
-import useCheckMobileScreen from '../components/CheckMobileScreen';
+import { pages } from "../pages/pages";
+import Sidebar from "./Sidebar";
+import AppTree from "./AppTree";
+import AppButtons from "./AppButtons";
+import Home from "../pages/Home";
+import MDContainer from "../components/MDContainer";
+import Footer from "./Footer";
+import useCheckMobileScreen from "../components/CheckMobileScreen";
 
 interface Page {
   index: number;
@@ -51,23 +51,24 @@ export default function App() {
     palette: {
       mode: paletteType,
       background: {
-        default: paletteType === "light" ? "#d5d6db" : "#1a1b26"
-      }
+        default: paletteType === "light" ? "#d5d6db" : "#1a1b26",
+      },
     },
     components: {
       MuiCssBaseline: {
         styleOverrides: {
-          body: paletteType === "dark" ? darkScrollbar() : null
-        }
+          body: paletteType === "dark" ? darkScrollbar() : null,
+        },
       },
       MuiDivider: {
         styleOverrides: {
-          root: {
-            borderColor: "rgba(255, 255, 255, 0.12)"
-          }
-        }
-      }
-    }
+          root: ({ theme }) => ({
+            borderColor:
+              theme.palette.mode === "dark" ? "#2f2f2f" : "rgba(0, 0, 0, 0.12)",
+          }),
+        },
+      },
+    },
   });
 
   function handleThemeChange() {
@@ -123,38 +124,53 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
       <Container
-      sx={{ m: 0, p: 0, overflowY: "hidden" }}
-      maxWidth={false}
-      disableGutters
-    >
-      <Grid container sx={{ overflow: "auto", overflowY: "hidden" }}>
-        <Grid container sx={{ overflow: "auto" }}>
-          <Grid item sx={{ width: 50 }}>
-            <Sidebar
-              setExpanded={setExpanded}
-              expanded={expanded}
-              darkMode={darkMode}
-              handleThemeChange={handleThemeChange}
-            />
-          </Grid>
-          {expanded && (
-            <Grid
-              item
-              sx={{
-                backgroundColor: darkMode ? "#16161e" : "#cbccd1",
-                width: 220,
-              }}
-            >
-              <Stack sx={{ mt: 1 }}>
-                <Typography
-                  variant="caption"
-                  color="#44475c"
-                  sx={{ ml: 3 }}
-                >
-                  EXPLORER
-                </Typography>
-                <AppTree
-                  pages={pages}
+        sx={{ m: 0, p: 0, overflowY: "hidden", overflowX: "hidden" }}
+        maxWidth={false}
+        disableGutters
+      >
+        <Grid container sx={{ overflowX: "hidden", overflowY: "hidden" }}>
+          <Grid container sx={{ overflowX: "hidden", overflowY: "auto" }}>
+            <Grid item sx={{ width: 50 }}>
+              <Sidebar
+                setExpanded={setExpanded}
+                expanded={expanded}
+                darkMode={darkMode}
+                handleThemeChange={handleThemeChange}
+              />
+            </Grid>
+            {expanded && (
+              <Grid
+                item
+                sx={{
+                  backgroundColor: darkMode ? "#16161e" : "#cbccd1",
+                  width: 220,
+                }}
+              >
+                <Stack sx={{ mt: 1 }}>
+                  <Typography variant="caption" color="#44475c" sx={{ ml: 3 }}>
+                    EXPLORER
+                  </Typography>
+                  <AppTree
+                    pages={pages}
+                    selectedIndex={selectedIndex}
+                    setSelectedIndex={setSelectedIndex}
+                    currentComponent={currentComponent}
+                    setCurrentComponent={setCurrentComponent}
+                    visiblePageIndexs={visiblePageIndexs}
+                    setVisiblePageIndexs={setVisiblePageIndexs}
+                  />
+                </Stack>
+              </Grid>
+            )}
+
+            <Grid item xs zeroMinWidth>
+              <Grid
+                sx={{
+                  height: "33px",
+                }}
+              >
+                <AppButtons
+                  pages={visiblePages}
                   selectedIndex={selectedIndex}
                   setSelectedIndex={setSelectedIndex}
                   currentComponent={currentComponent}
@@ -162,56 +178,41 @@ export default function App() {
                   visiblePageIndexs={visiblePageIndexs}
                   setVisiblePageIndexs={setVisiblePageIndexs}
                 />
-              </Stack>
-            </Grid>
-          )}
+              </Grid>
 
-          <Grid item xs zeroMinWidth>
-            <Grid
-              sx={{
-                height: "33px",
-              }}
-            >
-              <AppButtons
-                pages={visiblePages}
-                selectedIndex={selectedIndex}
-                setSelectedIndex={setSelectedIndex}
-                currentComponent={currentComponent}
-                setCurrentComponent={setCurrentComponent}
-                visiblePageIndexs={visiblePageIndexs}
-                setVisiblePageIndexs={setVisiblePageIndexs}
-              />
-            </Grid>
-
-            <Grid
-              sx={{
-                scrollBehavior: "smooth",
-                overflowY: "auto",
-                height: `calc(100vh - 20px - 33px)`,
-              }}
-            >
-              <Routes>
-                <Route
-                  path="/"
-                  element={<Home setSelectedIndex={setSelectedIndex} />}
-                />
-                {pages.map(({ index, name, route }) => (
+              <Grid
+                sx={{
+                  scrollBehavior: "smooth",
+                  overflowY: "auto",
+                  height: `calc(100vh - 20px - 33px)`,
+                }}
+              >
+                <Routes>
                   <Route
-                    key={index}
-                    path={route}
-                    element={<MDContainer path={`./pages/${name}`} />}
+                    path="/"
+                    element={<Home setSelectedIndex={setSelectedIndex} />}
                   />
-                ))}
-                <Route path="*" element={<Navigate to="/" replace />} />
-              </Routes>
+                  {pages.map(({ index, name, route, type }) => (
+                    <Route
+                      key={index}
+                      path={route}
+                      element={
+                        <MDContainer
+                          path={type === "md" ? `/pages/${name}` : name}
+                        />
+                      }
+                    />
+                  ))}
+                  <Route path="*" element={<Navigate to="/" replace />} />
+                </Routes>
+              </Grid>
             </Grid>
           </Grid>
+          <Grid item lg={12} md={12} sm={12} xs={12}>
+            <Footer />
+          </Grid>
         </Grid>
-        <Grid item lg={12} md={12} sm={12} xs={12}>
-          <Footer />
-        </Grid>
-      </Grid>
-    </Container>
+      </Container>
     </ThemeProvider>
   );
 }
