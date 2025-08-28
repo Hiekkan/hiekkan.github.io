@@ -12,6 +12,7 @@ interface Page {
   index: number;
   name: string;
   route: string;
+  exclude: boolean;
 }
 
 interface Props {
@@ -19,6 +20,7 @@ interface Props {
     index: number;
     name: string;
     route: string;
+    exclude: boolean;
   }[];
   selectedIndex: number;
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
@@ -40,8 +42,8 @@ export default function AppTree({
   const navigate = useNavigate();
   let { pathname } = useLocation();
   const theme = useTheme();
-
-  const page: Page = pages.find((x) => x.route === pathname)!;
+  const filteredPages = pages.filter((x) => !x.exclude);
+  const page: Page = filteredPages.find((x) => x.route === pathname)!;
 
   useEffect(() => {
     if (page) {
@@ -53,13 +55,15 @@ export default function AppTree({
     if (theme.palette.mode === "dark") {
       return selectedIndex === index ? "#202330" : "#16161e";
     } else {
-      return selectedIndex === index ? "#d5d6db" : "#cbccd1"
+      return selectedIndex === index ? "#d5d6db" : "#cbccd1";
     }
   }
 
   function renderTreeItemColor(index: number) {
     if (theme.palette.mode === "dark") {
-      return selectedIndex === index && currentComponent === "tree" ? "#8388a8" : "#44475c";
+      return selectedIndex === index && currentComponent === "tree"
+        ? "#8388a8"
+        : "#44475c";
     } else {
       return selectedIndex === index ? "#4c505e" : "#828594";
     }
@@ -70,8 +74,8 @@ export default function AppTree({
       aria-label="file system navigator"
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
-      sx={{ 
-        minWidth: 220, 
+      sx={{
+        minWidth: 220,
         fontSize: "0.9rem",
         ".MuiTreeItem-label": {
           fontSize: "0.9rem",
@@ -97,7 +101,8 @@ export default function AppTree({
         sx={{
           color: theme.palette.mode === "dark" ? "white" : "#4c505e",
           "&:hover": {
-            backgroundColor: theme.palette.mode === "dark" ? "#16161e" : "#cbccd1",
+            backgroundColor:
+              theme.palette.mode === "dark" ? "#16161e" : "#cbccd1",
           },
           "&& .MuiTreeItem-content .MuiTreeItem-label": {
             padding: 0,
@@ -119,7 +124,7 @@ export default function AppTree({
           },
         }}
       >
-        {pages.map(({ index, name, route }) => (
+        {filteredPages.map(({ index, name, route }) => (
           <TreeItem
             key={index}
             nodeId={index.toString()}
@@ -128,7 +133,8 @@ export default function AppTree({
               color: renderTreeItemColor(index),
               backgroundColor: renderTreeItemBgColor(index),
               "&:hover": {
-                background: theme.palette.mode === "dark" ? "#13131a" : "#cbccd1",
+                background:
+                  theme.palette.mode === "dark" ? "#13131a" : "#cbccd1",
               },
               "&& .Mui-selected": {
                 backgroundColor: renderTreeItemBgColor(index),
