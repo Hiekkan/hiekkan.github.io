@@ -9,6 +9,7 @@ interface Props {
     index: number;
     name: string;
     route: string;
+    exclude: boolean;
   }[];
   selectedIndex: number;
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
@@ -29,7 +30,7 @@ export default function AppButtons({
 }: Props) {
   const navigate = useNavigate();
   const theme = useTheme();
-
+  const filteredPages = pages.filter((x) => !x.exclude);
   function renderButtonBgColor() {
     if (theme.palette.mode === "dark") {
       return "#16161e";
@@ -57,9 +58,9 @@ export default function AppButtons({
         sx={{
           height: "33px",
           display: "inline-block",
-          borderBottom: renderBorderButton(index), 
+          borderBottom: renderBorderButton(index),
           alignItems: "center",
-          alignContent: "center"
+          alignContent: "center",
         }}
       >
         <Button
@@ -81,13 +82,13 @@ export default function AppButtons({
             color: renderButtonColor(index),
             "&.MuiButtonBase-root:hover": {
               color: theme.palette.mode === "dark" ? "#8388a8" : "#828594",
-              backgroundColor: renderButtonBgColor()
+              backgroundColor: renderButtonBgColor(),
             },
             transition: "none",
           }}
         >
           <Box
-            sx={{ color: "#6997d5", width: 20, height: 20, mr: 0.4, ml: -1}}
+            sx={{ color: "#6997d5", width: 20, height: 20, mr: 0.4, ml: -1 }}
           >
             <VscMarkdown />
           </Box>
@@ -135,14 +136,16 @@ export default function AppButtons({
           height: "3px",
         },
         "&::-webkit-scrollbar-thumb": {
-          backgroundColor: theme.palette.mode === "dark" ? "#535353" : "#8c8c8c",
+          backgroundColor:
+            theme.palette.mode === "dark" ? "#535353" : "#8c8c8c",
         },
         "&::-webkit-darkScrollbar-thumb": {
-          backgroundColor: theme.palette.mode === "dark" ? "#ffffff" : "#8c8c8c",
+          backgroundColor:
+            theme.palette.mode === "dark" ? "#ffffff" : "#8c8c8c",
         },
       }}
     >
-      {pages.map(({ index, name, route }) =>
+      {filteredPages.map(({ index, name, route }) =>
         renderPageButton(index, name, route)
       )}
     </Container>

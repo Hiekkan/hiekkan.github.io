@@ -23,12 +23,14 @@ interface Page {
   index: number;
   name: string;
   route: string;
+  exclude: boolean;
 }
 
 function initVisiblePageIndexs(pages: Page[]) {
+  const filteredPages = pages.filter((x) => !x.exclude);
   const tabs = [];
-  for (let i = 0; i < pages.length; i++) {
-    const page = pages[i];
+  for (let i = 0; i < filteredPages.length; i++) {
+    const page = filteredPages[i];
     tabs.push(page.index);
   }
   return tabs;
