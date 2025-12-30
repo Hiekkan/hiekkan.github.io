@@ -1,146 +1,218 @@
 import {
-    Chip,
-    Container,
-    Divider,
-    Link,
-    Paper,
-    Table,
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableFooter,
-    TableHead,
-    TableRow,
-    Typography,
-  } from "@mui/material";
-  import { ReactNode, useEffect, useState } from "react";
-  import ReactMarkdown from "react-markdown";
-  import rehypeRaw from "rehype-raw";
-  import remarkBreaks from "remark-breaks";
-  import remarkGfm from "remark-gfm";
-  import { LazyLoadImage } from "react-lazy-load-image-component";
-  
-  interface Props {
-    path: string;
-  }
-  
-  function MarkdownLink(props: any) {
-    return (
-      <Link href={props.href} target="_blank" underline="hover">
+  Box,
+  Chip,
+  Container,
+  Divider,
+  Link,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableFooter,
+  TableHead,
+  TableRow,
+  Typography,
+} from "@mui/material";
+import { ReactNode, useEffect, useState, useRef } from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import remarkBreaks from "remark-breaks";
+import remarkGfm from "remark-gfm";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+interface Props {
+  path: string;
+}
+
+function MarkdownLink(props: any) {
+  return (
+    <Link href={props.href} target="_blank" underline="hover">
+      {props.children}
+    </Link>
+  );
+}
+
+function MarkdownTable(props: { children: ReactNode }) {
+  return (
+    <TableContainer component={Paper}>
+      <Table size="small" aria-label="a dense table">
         {props.children}
-      </Link>
-    );
-  }
-  
-  function MarkdownTable(props: { children: ReactNode }) {
-    return (
-      <TableContainer component={Paper}>
-        <Table size="small" aria-label="a dense table">
-          {props.children}
-        </Table>
-      </TableContainer>
-    );
-  }
-  
-  function MarkdownTableCell(props: { children: ReactNode }) {
-    return (
-      <TableCell>
+      </Table>
+    </TableContainer>
+  );
+}
+
+function MarkdownTableCell(props: { children: ReactNode }) {
+  return <TableCell>{props.children}</TableCell>;
+}
+
+function MarkdownCode(props: { children: ReactNode }) {
+  return <Chip size="small" label={props.children?.toString()} />;
+}
+
+function MarkdownH1(props: { children: ReactNode }) {
+  return (
+    <>
+      <Typography
+        variant="h1"
+        sx={{
+          fontSize: "2em",
+          display: "block",
+          marginBlockStart: "0.67em",
+          marginBlockEnd: "0.3em",
+          fontWeight: "bold",
+          lineHeight: 1.25,
+        }}
+      >
         {props.children}
-      </TableCell>
-    );
-  }
-  
-  function MarkdownCode(props: { children: ReactNode }) {
-    return <Chip size="small" label={props.children?.toString()} />;
-  }
-  
-  function MarkdownH1(props: { children: ReactNode }) {
-    return (
-      <>
-        <Typography
-          variant="h1"
-          sx={{
-            fontSize: "2em",
-            display: "block",
-            marginBlockStart: "0.67em",
-            marginBlockEnd: "0.3em",
-            fontWeight: "bold",
-            lineHeight: 1.25,
-          }}
-        >
-          {props.children}
-        </Typography>
-        <Divider />
-      </>
-    );
-  }
-  
-  function MarkdownH2(props: { children: ReactNode }) {
-    return (
-      <>
-        <Typography
-          variant="h2"
-          sx={{
-            fontSize: "1.5em",
-            display: "block",
-            marginBlockStart: "0.83em",
-            marginBlockEnd: "0.3em",
-            fontWeight: "bold",
-            lineHeight: 1.25,
-          }}
-        >
-          {props.children}
-        </Typography>
-        <Divider />
-      </>
-    );
-  }
-  
-  function MarkdownParagraph(props: { children: ReactNode }) {
-    if (!props.children) return <Typography>{props.children}</Typography>;
-  
-    const element: any = props.children;
-    let result = [];
-  
-    let anyInlineElement = false;
-    for (let e of element) {
-      if (e.type) {
-        anyInlineElement = true;
-      }
+      </Typography>
+      <Divider />
+    </>
+  );
+}
+
+function MarkdownH2(props: { children: ReactNode }) {
+  return (
+    <>
+      <Typography
+        variant="h2"
+        sx={{
+          fontSize: "1.5em",
+          display: "block",
+          marginBlockStart: "0.83em",
+          marginBlockEnd: "0.3em",
+          fontWeight: "bold",
+          lineHeight: 1.25,
+        }}
+      >
+        {props.children}
+      </Typography>
+      <Divider />
+    </>
+  );
+}
+
+function MarkdownParagraph(props: { children: ReactNode }) {
+  if (!props.children) return <Typography>{props.children}</Typography>;
+
+  const element: any = props.children;
+  let result = [];
+
+  let anyInlineElement = false;
+  for (let e of element) {
+    if (e.type) {
+      anyInlineElement = true;
     }
-  
-    if (anyInlineElement) {
-      for (let e of element) {
-        if (e.type) {
-          result.push({ ...e });
-        } else {
-          result.push(
-            <Typography key={e} display="inline">
-              {e}
-            </Typography>
-          );
-        }
-      }
-    } else {
-      for (let e of element) {
-        if (e.type) {
-          result.push({ ...e });
-        } else {
-          result.push(<Typography key={e}>{e}</Typography>);
-        }
-      }
-    }
-  
-    return <>{result}</>;
   }
 
-  function MarkdownImage(props: any) {
-    return <>
-      <LazyLoadImage effect="blur" src={props.src} alt={props.alt} width={props.width} height={props.height} title={props.title}>{props.children}</LazyLoadImage>
-    </>
+  if (anyInlineElement) {
+    for (let e of element) {
+      if (e.type) {
+        result.push({ ...e });
+      } else {
+        result.push(
+          <Typography key={e} display="inline">
+            {e}
+          </Typography>
+        );
+      }
+    }
+  } else {
+    for (let e of element) {
+      if (e.type) {
+        result.push({ ...e });
+      } else {
+        result.push(<Typography key={e}>{e}</Typography>);
+      }
+    }
   }
-  
-  export default function MDContainer({ path }: Props) {
+
+  return <>{result}</>;
+}
+
+function MarkdownImage(props: any) {
+  return (
+    <>
+      <LazyLoadImage
+        effect="blur"
+        src={props.src}
+        alt={props.alt}
+        width={props.width}
+        height={props.height}
+        title={props.title}
+      >
+        {props.children}
+      </LazyLoadImage>
+    </>
+  );
+}
+
+function MarkdownVideo(props: any) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    if (!videoElement) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          videoElement.play().catch((error) => {
+            console.log("Autoplay prevented:", error);
+          });
+        } else {
+          videoElement.pause();
+        }
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    observer.observe(videoElement);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        width: "100%",
+        my: 4,
+        "& video": {
+          width: "auto",
+          height: "auto",
+          maxWidth: { xs: "100%", md: "60%" },
+          maxHeight: "60vh",
+          display: "block",
+          borderRadius: "12px",
+          boxShadow: 3,
+          outline: "none",
+        },
+      }}
+    >
+      <video
+        ref={videoRef}
+        {...props}
+        muted
+        loop
+        controls
+        playsInline
+        style={{ ...props.style }}
+      >
+        {props.children}
+      </video>
+    </Box>
+  );
+}
+
+export default function MDContainer({ path }: Props) {
   const [content, setContent] = useState<string | React.FC | null>(null);
 
   useEffect(() => {
@@ -160,9 +232,14 @@ import {
         });
     }
 
-    const title = path.split("/").pop()?.replace(/\.[^/.]+$/, "");
+    const title = path
+      .split("/")
+      .pop()
+      ?.replace(/\.[^/.]+$/, "");
     if (title) {
-      document.title = `NJ Portfolio | ${title.charAt(0).toUpperCase()}${title.slice(1)}`;
+      document.title = `NJ Portfolio | ${title
+        .charAt(0)
+        .toUpperCase()}${title.slice(1)}`;
     }
   }, [path]);
 
@@ -184,16 +261,18 @@ import {
             tfoot: TableFooter,
             h1: MarkdownH1,
             h2: MarkdownH2,
-            image: MarkdownImage
+            img: MarkdownImage,
+            video: MarkdownVideo,
           }}
           remarkPlugins={[remarkGfm, remarkBreaks]}
           rehypePlugins={[rehypeRaw]}
         />
       )}
-      {typeof content === "function" && (() => {
-        const Content = content;
-        return <Content />;
-      })()}
+      {typeof content === "function" &&
+        (() => {
+          const Content = content;
+          return <Content />;
+        })()}
     </Container>
   );
 }
