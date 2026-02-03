@@ -6,7 +6,7 @@ Showcasing projects from my Interaction Design studies
 
 ## Break the Rules – Micro Campaign for foodwaste.ch
 
-### November - January 2025
+### November - January 2026
 
 &nbsp;
 
