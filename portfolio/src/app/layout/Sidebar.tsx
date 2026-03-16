@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Link, Paper, Tooltip } from "@mui/material";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
@@ -20,12 +20,26 @@ export default function Sidebar({
   darkMode,
   handleThemeChange,
 }: Props) {
+  const MOBILE_BREAKPOINT = 768;
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < MOBILE_BREAKPOINT && expanded) {
+        setExpanded(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [expanded, setExpanded]);
 
   function renderBoxColor() {
     if (darkMode) {
       return expanded ? "#8388a8" : "#44475c";
     } else {
-      return expanded ?  "#828594" : "#4c505e";
+      return expanded ? "#828594" : "#4c505e";
     }
   }
 
@@ -116,7 +130,7 @@ export default function Sidebar({
                 sx={{
                   flexGrow: 0,
                   m: 0.5,
-                  color: darkMode ? "#44475c" : "#828594" ,
+                  color: darkMode ? "#44475c" : "#828594",
                   fontSize: 24,
                   "&:hover": {
                     color: darkMode ? "#8388a8" : "#4c505e",
@@ -174,7 +188,7 @@ export default function Sidebar({
           sx={{
             flexGrow: 0,
             fontSize: 24,
-            color: darkMode ? "#44475c" : "#828594" ,
+            color: darkMode ? "#44475c" : "#828594",
             cursor: "pointer",
             "&:hover": {
               color: darkMode ? "#8388a8" : "#4c505e",

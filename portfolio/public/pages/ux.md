@@ -100,66 +100,6 @@ Link: [Wordpress Site](https://b13upa0.myrdbx.io/project/story-iad14-gruppe-01)
 
 &nbsp;
 
-## Loop the Brand - Volvo
-
-### November - December 2024
-
-&nbsp;
-
-<video>
-    <source src="../videos/Volvo.mp4" type=video/mp4 />
-</video>
-
-&nbsp;
-
-**Project Overview:**
-Created a looping brand animation in After Effects for the car manufacturer Volvo, reimagined with a humorous twist. The goal was to capture brand essence while adding an unexpected, playful layer.
-
-&nbsp;
-
-**Key Features:**
-
-- **Humorous Brand Staging:** Presented Volvo’s image with exaggerated reliability and safety in a lighthearted, self-aware tone.
-- **Seamless Loop:** Designed an endlessly repeating motion to support social media use.
-- **Character & Symbol Animation:** Developed illustrative scenes that align with core brand values like control, durability, and understatement.
-
-**Outcome:**
-A seamless, 10-second motion loop that humorously stages the Volvo brand in a social-media-friendly format, showcasing both technical precision and narrative creativity.
-
-&nbsp;
-
-## Pride Ride App
-
-### August - November 2024
-
-&nbsp;
-
-<video>
-    <source src="../videos/Pride-Ride-Prototype.mp4" type=video/mp4 />
-</video>
-
-&nbsp;
-
-**Project Overview:**
-Designed a dedicated touring application for the e-bike brand Pride Ride, focusing on "Branded Interaction." The goal was to extend the physical riding experience into the digital space through a seamless user journey.
-
-&nbsp;
-
-**Key Features:**
-
-- **Branded Interaction:** Translated the specific "feel" of the Pride Ride brand into digital UI elements and smooth transitions to create a cohesive ecosystem.
-- **Optimized User Journey:** Developed a fluid navigation and tour-tracking flow that minimizes friction, allowing riders to focus on the experience.
-- **Visual Consistency:** Aligned the interface design strictly with the bike's aesthetic to strengthen brand recognition and user trust.
-
-**Outcome:**
-A high-fidelity prototype demonstrating a polished digital companion that enhances the physical product, centered around a strong brand narrative and intuitive usability.
-
-&nbsp;
-
-Link: [Figma Prototype](https://www.figma.com/proto/X9Lj14OTPrPqCFqEX5tFG9/Pride-Ride-Design?page-id=142%3A2&node-id=159-97&starting-point-node-id=159%3A97&t=v3aFImalPimlS50i-1)
-
-&nbsp;
-
 ## Finland Travel Planner
 
 ### March - June 2024
@@ -192,37 +132,6 @@ Link: [Figma Prototype](https://www.figma.com/proto/FI4UDBEwX2y5aELC3J1R8E/Inter
 
 &nbsp;
 
-## Nike Rebranding
-
-### March - April 2024
-
-&nbsp;
-
-<video>
-    <source src="../videos/Nike-Prototype.mp4" type=video/mp4 />
-</video>
-
-&nbsp;
-
-**Project Overview:**
-Rebranded Nike with a focus on longboarding and skateboarding, infusing the brand with an industrial aesthetic.
-
-&nbsp;
-
-**Key Features:**
-
-- **Dynamic Imagery:** Emphasized bold, action-oriented visuals that reflect skateboarding culture’s energy and rawness.
-- **Industrial Design:** Utilized a color scheme and textures to evoke an adventurous and rebellious spirit.
-
-**Outcome:**
-A high-fidelity Figma prototype showcasing a straightforward yet impactful layout that aligns Nike’s identity with the lifestyle and attitude of longboarding and skateboarding.
-
-&nbsp;
-
-Link: [Figma Prototype](https://www.figma.com/proto/udhUssd3GLijvjpGCwlpoP/UX-Design---Nike-Rebranding?page-id=0%3A1&node-id=59-160&starting-point-node-id=59%3A160&t=0ik5CHyNjncKe4CM-1)
-
-&nbsp;
-
 ## Smart Home Dashboard
 
 ### February - March 2024
@@ -251,36 +160,5 @@ A high-fidelity Figma prototype showcasing a visually appealing and functional i
 &nbsp;
 
 Link: [Figma Prototype](https://www.figma.com/proto/2QAXQHQrVw9JYKYZ8tBsvt/Visual-Storytelling---Nora-s-Smart-Home?page-id=0%3A1&node-id=1-2&t=0HvD3it5yC4SDJRt-1)
-
-&nbsp;
-
-## Prediploma Fitschi Ski Bindings
-
-### January 2024
-
-&nbsp;
-
-<video>
-    <source src="../videos/Fritschi-Prototype.mp4" type=video/mp4 />
-</video>
-
-&nbsp;
-
-**Project Overview:**
-Designed a landing page for Fitschi ski bindings as part of a prediploma project, focusing on a ski tour in Bivio.
-
-&nbsp;
-
-**Key Features:**
-
-- **Integrated Branding:** Showcased the ski tour while seamlessly integrating Fitschi’s bindings.
-- **Enhanced Credibility:** Incorporated a brand ambassador to boost brand presence.
-
-**Outcome:**
-A high-fidelity Figma prototype showcasing a cohesive and engaging landing page that highlights the ski tour's unique aspects while promoting the bindings effectively.
-
-&nbsp;
-
-Link: [Figma Prototype](https://www.figma.com/proto/2YYlinJgt1i2bd01mmxMRs/Vordiplom-Fritschi-Swiss?page-id=5783%3A84&node-id=5784-155&starting-point-node-id=5784%3A155&t=53IYAYmpEHkRMckO-1)
 
 &nbsp;
