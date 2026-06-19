@@ -1,15 +1,16 @@
 # Overview
 
-Hello 😊 I'm Nora, a SharePoint Developer at Swiss Post. 📯
+Hei 😊 I'm Nora and I currently work as a Software & DevOps Engineer at Swiss Post. 📯
+
+&nbsp;
+
+I build and maintain SharePoint solutions with React, automate deployment pipelines with GitHub Actions and Terraform, and care deeply about accessibility and clean code.
+I recently completed my studies in Interaction Design, which means I bring both engineering and design thinking to the table. 💡
 
 &nbsp;
 
 I enjoy tinkering with my server and smart home setup. 👩🏼‍💻 Apart from coding, I’m a big movie buff who loves discovering new films. 🎬
 I also like playing video games with friends and going to metal concerts. 🤘🏻
-
-&nbsp;
-
-Currently, I'm pursuing studies in Interaction Design to deepen my understanding of UI/UX design, believing this expertise will further enhance my skills as a developer. 💪🏼
 
 &nbsp;
 
@@ -23,10 +24,11 @@ Currently, I'm pursuing studies in Interaction Design to deepen my understanding
     <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"/>
     <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"/>
     <img src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white"/>
+    <img src="https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white"/>
+    <img src="https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"/>
     <img src="https://img.shields.io/badge/Storybook-FF4785?logo=storybook&logoColor=fff&style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=173647&style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/Postgres-%23316192.svg?logo=postgresql&logoColor=white&style=for-the-badge"/>
     <img src="https://custom-icon-badges.demolab.com/badge/Playwright-2EAD33?logo=playwright&logoColor=fff&style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/github%20copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white"/>
 </div>
 
 &nbsp;
