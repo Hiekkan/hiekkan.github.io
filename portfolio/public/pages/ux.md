@@ -49,7 +49,7 @@ Sensory overload is not an individual perception problem, it is the direct resul
 
 &nbsp;
 
-Links: [Desktop Prototype](https://www.figma.com/proto/ynLsmrUgH3pLYoGkRMZA6v/Hauptprototyp-Nora-Jentzsch?page-id=52%3A2&node-id=173-2311&p=f&viewport=-108%2C-23%2C0.16&t=MxbPlD1r3jTxtuhi-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=129%3A590) | [Mobile Prototype](https://www.figma.com/proto/ynLsmrUgH3pLYoGkRMZA6v/Hauptprototyp-Nora-Jentzsch?page-id=53%3A116&node-id=529-1276&viewport=3052%2C-10833%2C2.32&t=EQDEM1CKu6xn9JJI-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=525%3A478)
+Links: [Desktop Prototype](https://www.figma.com/proto/ynLsmrUgH3pLYoGkRMZA6v/Hauptprototyp-Nora-Jentzsch?page-id=52%3A2&node-id=129-590&p=f&viewport=-108%2C-23%2C0.16&t=MxbPlD1r3jTxtuhi-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=129%3A590) | [Mobile Prototype](https://www.figma.com/proto/ynLsmrUgH3pLYoGkRMZA6v/Hauptprototyp-Nora-Jentzsch?page-id=53%3A116&node-id=525-478&viewport=3052%2C-10833%2C2.32&t=EQDEM1CKu6xn9JJI-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=525%3A478)
 
 &nbsp;
 
