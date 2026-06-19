@@ -54,7 +54,7 @@ export default function Home({ setSelectedIndex }: Props) {
                 gutterBottom={false}
                 sx={{ fontSize: { xs: "1rem", md: "1.5rem" } }}
               >
-                A passionate frontend developer & UI/UX designer
+                A passionate frontend developer & Interaction designer
               </Typography>
             </Grid>
             <Grid
