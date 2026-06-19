@@ -4,6 +4,55 @@ Showcasing projects from my Interaction Design studies
 
 &nbsp;
 
+## Talvisota: Pyry – Accessible Game Interface
+
+### February - June 2026
+
+&nbsp;
+
+<div style="padding:56.25% 0 0 0;position:relative;">
+  <iframe src="https://player.vimeo.com/video/1202448847?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    title="Talvisota Prototype">
+  </iframe>
+</div>
+
+&nbsp;
+
+**Project Overview:**
+Modern multiplayer shooters are often a real barrier for neurodivergent players: overloaded interfaces and missing filter mechanisms lead to cognitive exhaustion and limit the enjoyment of play. Yet neurodivergent people use gaming disproportionately as a social space where friendships form and social participation becomes possible. Commissioned by the gaming group «Lorem Ipsum», this project delivers an accessible game interface for a fictional battle royale shooter set during the Finnish Winter War, an interface that doesn't show less, but prioritises better.
+
+&nbsp;
+
+**Process:**
+
+- **Research:** Conducted user shadowing sessions and open interviews with neurodivergent and neurotypical players to observe interface barriers directly in a gaming context.
+- **Analysis:** Reviewed Game Accessibility Guidelines (GAG), Xbox Accessibility Guidelines, and WCAG, alongside a competitive analysis of existing shooters such as Apex Legends, PUBG, and Arc Raiders.
+- **Design System:** Developed a concept grounded in principles of hierarchy, sensory reduction as default, and context-sensitive information display.
+- **Validation:** Implemented as an interactive high-fidelity prototype in Figma and validated in two test rounds with the client and a peer group.
+
+&nbsp;
+
+**Key Features:**
+
+- **Three configurable HUD templates** that allow players to adjust information density to their needs.
+- **Onboarding flow** with integrated accessibility configuration from the first session.
+- **Context-sensitive team interface** that surfaces squad information only when relevant.
+- **Non-verbal ping system** to reduce communication load during high-intensity moments.
+- **Steam extension concept** enabling players to filter games based on a personal sensory profile.
+
+**Outcome:**
+Sensory overload is not an individual perception problem, it is the direct result of poor design decisions. What neurodivergent players urgently need turns out to be an improvement for everyone.
+
+&nbsp;
+
+Links: [Desktop Prototype](https://www.figma.com/proto/ynLsmrUgH3pLYoGkRMZA6v/Hauptprototyp-Nora-Jentzsch?page-id=52%3A2&node-id=173-2311&p=f&viewport=-108%2C-23%2C0.16&t=MxbPlD1r3jTxtuhi-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=129%3A590) | [Mobile Prototype](https://www.figma.com/proto/ynLsmrUgH3pLYoGkRMZA6v/Hauptprototyp-Nora-Jentzsch?page-id=53%3A116&node-id=529-1276&viewport=3052%2C-10833%2C2.32&t=EQDEM1CKu6xn9JJI-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=525%3A478)
+
+&nbsp;
+
 ## Break the Rules – Micro Campaign for foodwaste.ch
 
 ### November - January 2026
